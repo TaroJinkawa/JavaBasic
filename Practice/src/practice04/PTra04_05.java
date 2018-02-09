@@ -28,7 +28,16 @@ public class PTra04_05 {
 			// 文字列を数字に変換して、変数numに代入します
 			// ※ コマンドプロンプトで入力された値が、数字ではなかった場合はプログラムがエラーになり、プログラムが終了します
 			int myHand = Integer.parseInt(line);
-
+			if(myHand < 0 || myHand > 2) {
+				System.out.println("0から2の間の数値を入力して下さい");
+				continue;
+			}else if(myHand == 0) {
+				System.out.println("じゃんけん！グー!!");
+			}else if(myHand == 1) {
+				System.out.println("じゃんけん！チョキ!!");
+			}else {
+				System.out.println("じゃんけん！パー!!");
+			}
 			System.out.print("相手の手は・・・・・");
 
 			// 下記の命令を実行すると変数cpuHandに、0以上、変数3未満の数字がランダムで代入されます
@@ -46,17 +55,39 @@ public class PTra04_05 {
 			 */
 			if (cpuHand == 0) {
 				System.out.println("グー！");
+				if(myHand == 0) {
+					System.out.println("あいこ！！");
+				}else if(myHand == 1){
+					System.out.println("負け！！");
+				}else {
+					System.out.println("勝ち！！");
+					break;
+				}
 
 
 
 			} else if (cpuHand == 1) {
 				System.out.println("チョキ！！");
-
+				if(myHand == 1) {
+					System.out.println("あいこ！！");
+				}else if(myHand == 2){
+					System.out.println("負け！！");
+				}else {
+					System.out.println("勝ち！！");
+					break;
+				}
 
 
 			} else {
 				System.out.println("パー！！");
-
+				if(myHand == 2) {
+					System.out.println("あいこ！！");
+				}else if(myHand == 0){
+					System.out.println("負け！！");
+				}else {
+					System.out.println("勝ち！！");
+					break;
+				}
 
 
 			}
