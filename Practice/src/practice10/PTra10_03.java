@@ -16,10 +16,10 @@ public class PTra10_03 {
 
 		// Userクラスを作成後に着手してください
 		// ★ User型の変数usを宣言してください
-
+		User us;
 
 		// ★ 変数usに、Userクラスのインスタンスを作成・代入してください
-
+		us = new User();
 
 		System.out.println("ユーザID（数字）、 ユーザ名、メールアドレス、パスワードをカンマ区切りで入力してください");
 
