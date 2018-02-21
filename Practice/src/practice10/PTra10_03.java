@@ -1,4 +1,5 @@
 package practice10;
+
 /*
  * PTra10_03.java
  *   作成	LIKEIT	2017
@@ -24,19 +25,36 @@ public class PTra10_03 {
 		System.out.println("ユーザID（数字）、 ユーザ名、メールアドレス、パスワードをカンマ区切りで入力してください");
 
 		// ★ java.util.Scannerクラスをインスタンス化し、変数scannerに代入してください
+		java.util.Scanner scanner = new java.util.Scanner(System.in);
 
 
 		// ★ 入力された値を、String型の変数lineに格納してください
+		String line = scanner.nextLine();
+
 
 
 		// ★ 変数lineに格納されている値を','で区切り、配列にしてください（Stringクラスのメソッドを使用します）
+		String[]date = line.split(",",0);
+
 
 
 		// ★ 配列にした値を、usの各フィールドに代入してください
 		// ユーザIDに該当する値が数値でなかった場合は、エラーでプログラムが止まっても良いです
+		int i = Integer.parseInt(date[0]);
+		us.userId = i;
+		us.userName = date[1];
+		us.mail = date[2];
+		us.password = date[3];
+
+
 
 
 		// ★ 変数usに格納されているインスタンスの、フィールドuserId, userNm, mail, passwordを出力してください
+		System.out.println(us.userId);
+		System.out.println(us.userName);
+		System.out.println(us.mail);
+		System.out.println(us.password);
+
 
 	}
 }
