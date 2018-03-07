@@ -28,19 +28,37 @@ public class PTra13_04 {
 		 */
 
 		while(true) {
-			boolean winFlag = slime.damage(hero.attack());
 
-			if(winFlag = false) {
-				System.out.println(hero.getName()+"は"+slime.getName()+"との戦いに勝利した");
+			System.out.println(hero.getName()+"のターン");
+			System.out.println(hero.getName()+"の攻撃！");
+
+			boolean win = slime.damage(hero.attack());
+
+			if(win == true) {
+				System.out.println(slime.getName()+"のHPは0になった");
+				System.out.println(hero.getName()+"は"+slime.getName()+"との戦闘に勝利した");
 				break;
 			}
-			hero.damage(slime.attack());
-			boolean loseFlag = hero.damage(slime.attack());
 
-			if(loseFlag = false) {
-				System.out.println(slime.getName()+"は"+hero.getName()+"との戦いに勝利した");
+			System.out.println(slime.getName()+"のHPはまだ残っている");
+			System.out.println("");
+
+
+
+			System.out.println(slime.getName()+"のターン");
+			System.out.println(slime.getName()+"の攻撃！");
+
+			boolean lose = hero.damage(slime.attack());
+
+			if(lose == true) {
+				System.out.println(hero.getName()+"のHPは0になった");
+				System.out.println(slime.getName()+"は"+hero.getName()+"との戦闘に勝利した");
 				break;
 			}
+
+			System.out.println(hero.getName()+"のHPはまだ残っている");
+			System.out.println("");
+
 
 		}
 

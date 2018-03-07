@@ -7,7 +7,14 @@
 package practice14.ptra14;
 
 public class PTra14_01 {
+	public static void main(String[] args) {
+	practice14.common.JavaCourse javacourse = new practice14.common.JavaCourse();
 
+	System.out.println(javacourse.getCourseName());
+
+	for(int i=0;i<javacourse.getCourseUnit().length;i++)
+	System.out.println(javacourse.getCourseUnit()[i]);
+	}
 	/*
 	 * ★ common.Courseを実装した、JavaCourseクラスを作成してください
 	 *

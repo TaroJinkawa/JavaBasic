@@ -34,6 +34,53 @@ public class PTra13_09 {
 	public static void main(String[] args) {
 
 		// ★ 定数で定義されている各データを使用して、Employeeインスタンスを３つ作成してください
+		//--------------------------employee1---------------------------------//
+		practice13.common.Employee employee1 = new practice13.common.Employee();
+		employee1.setDepartmentNm(QUATERDATA[0][0]);
+
+		int i = Integer.parseInt(QUATERDATA[1][0]);
+		employee1.setDepartmentCnt(i);
+		System.out.println(employee1.getDepartmentNm()+":"+employee1.getDepartmentCnt()+"人");
+		employee1.setUserNm(NAMEDATA[0]);
+		employee1.setMail(MAILDATA[0]);
+		employee1.setPassword(PASSDATA[0]);
+		System.out.println("代表者:"+employee1.userNm);
+		System.out.println("メールアドレス:"+employee1.mail);
+		System.out.println("パスワード:"+employee1.password);
+		System.out.println("");
+		//--------------------------employee1---------------------------------//
+
+		//--------------------------employee2---------------------------------//
+		practice13.common.Employee employee2 = new practice13.common.Employee();
+		employee2.setDepartmentNm(QUATERDATA[0][1]);
+
+		int f = Integer.parseInt(QUATERDATA[1][1]);
+		employee2.setDepartmentCnt(f);
+		System.out.println(employee2.getDepartmentNm()+":"+employee2.getDepartmentCnt()+"人");
+		employee2.setUserNm(NAMEDATA[1]);
+		employee2.setMail(MAILDATA[1]);
+		employee2.setPassword(PASSDATA[1]);
+		System.out.println("代表者:"+employee2.userNm);
+		System.out.println("メールアドレス:"+employee2.mail);
+		System.out.println("パスワード:"+employee2.password);
+		System.out.println("");
+		//--------------------------employee2---------------------------------//
+
+		//--------------------------employee3---------------------------------//
+		practice13.common.Employee employee3 = new practice13.common.Employee();
+		employee3.setDepartmentNm(QUATERDATA[0][2]);
+
+		int g = Integer.parseInt(QUATERDATA[1][2]);
+		employee3.setDepartmentCnt(g);
+		System.out.println(employee3.getDepartmentNm()+":"+employee3.getDepartmentCnt()+"人");
+		employee3.setUserNm(NAMEDATA[2]);
+		employee3.setMail(MAILDATA[2]);
+		employee3.setPassword(PASSDATA[2]);
+		System.out.println("代表者:"+employee3.userNm);
+		System.out.println("メールアドレス:"+employee3.mail);
+		System.out.println("パスワード:"+employee3.password);
+		System.out.println("");
+		//--------------------------employee3---------------------------------//
 
 	}
 }
