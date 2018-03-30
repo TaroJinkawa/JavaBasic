@@ -13,16 +13,16 @@ public class PTra06_02 {
 		//-----for start
 		for (int i=0;i<=20;i++) {
 			// ★ 今何回目の処理なのかを出力してください
-			System.out.print(i+"回目");
+			System.out.print((i+1)+"回目");
 
 			// ★ 奇数回のときには、「奇数」を出力してください
-			if(i % 2 == 0) {
+			if((i+1) % 2 == 0) {
 
 			System.out.println("");
 
 			}else{
 
-			System.out.println("奇数");
+			System.out.println(" 奇数");
 
 			}
 

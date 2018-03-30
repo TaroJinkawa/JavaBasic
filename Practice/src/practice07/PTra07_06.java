@@ -16,13 +16,13 @@ public class PTra07_06 {
 		};
 
 		// ★ 配列arrayに格納されている全ての数字の平均を出力してください
-	int []i = {array[0][0],array[0][1],array[0][2]};
+		double []i = {array[0][0],array[0][1],array[0][2]};
 
-	int []j = {array[1][0],array[1][1],array[1][2],array[1][3]};
+	double []j = {array[1][0],array[1][1],array[1][2],array[1][3]};
 
-	int num = array[0][0]+array[0][1]+array[0][2]+array[1][0]+array[1][1]+array[1][2]+array[1][3];
+	double num = array[0][0]+array[0][1]+array[0][2]+array[1][0]+array[1][1]+array[1][2]+array[1][3];
 
-	int score = num / (i.length + j.length);
+	double score = num / (i.length + j.length);
 
 
 	System.out.println(score);
